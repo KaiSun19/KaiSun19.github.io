@@ -1,0 +1,33 @@
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+  }
+  
+  @for $i from 10 through 22 { // loops through the .text-animate._i from 10 to 22 
+    .text-animate._#{$i} {
+      animation-delay: #{$i / 10}s; // delays animation according to the index of the char 
+    }
+  }
+
+  .text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+  
+    &:hover {
+      animation: rubberBand 1s;
+      color: rgb(0, 145, 255);
+    }
+  }
+
+.h2_char{
+  font-weight: bold;
+}
+
+
+

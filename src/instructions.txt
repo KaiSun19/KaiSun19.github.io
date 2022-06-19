@@ -1,0 +1,37 @@
+1. create routes in app.js
+    layout folder
+    index.js file in Layout folder // where all components will be stored 
+        layout component
+    index.js file in Siderbar folder 
+        Siderbar component
+
+2. create a logo 
+
+3. create nav bar div in Sidebar component 
+    have a logo and subtitle div
+    set logo and img to block in order to make it fit in navbar
+    create navlink with home icom with activeclassname as "active"
+    create navlink to about
+    create navlink to contact 
+    make after pseudoclass so when icons are hovered they show their names
+    make active pseudoclass so current navlink has a yellow color 
+    create a ul with all social media 
+
+4. create html tags in the home page 
+
+5. created AnimeLetters component
+    takes in a classname state, array of letters, and srarting index
+    maps through the letters and returns a span with the letter and the classname and the key being a mix of index and letter
+    create animation for the array where there is a pause between each letter rendering 
+    when hovering on a letter, the letter should have a bouncing animation 
+
+    6. Create logo animation
+        place solid logo under a separate div 
+        create svg for the anime logo
+        use gsap trial to animate svg logo 
+        fade into solid logo when animation is done
+        
+
+
+      
+

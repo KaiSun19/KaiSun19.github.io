@@ -1,0 +1,72 @@
+
+.top-tags {
+    bottom: auto;
+    top: 35px;
+  }
+  
+  .tags {
+    color: #000000;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    font-size: 18px;
+    font-family: 'La Belle Aurore', cursive;
+  }
+
+  .bottom-tag-html {
+    margin-left: -20px;
+    font-family: 'La Belle Aurore', cursive;
+  }
+
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+
+.home-img{
+    width: 200px;
+    height: auto;
+    margin-left: 5%;
+}
+
+.text-zone{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    max-height: 90%;
+    animation: fadeIn 1s 0.3s backwards;
+}
+
+
+.title-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+
+}
+
+.logo-background{
+    position: absolute;
+    left: 26%;
+    top: 25%;
+}
+
+.work-button{
+    margin-top: 5%;
+    border: #000000 1px solid;
+}
+
+.work-button:hover{
+    background-color: black;
+    color: white;
+    border: #000000 1px solid;
+}
