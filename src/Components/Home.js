@@ -56,7 +56,7 @@ function Home() {
               </div>
           </div>
 
-          <AnimeLogo/>
+          {/* <AnimeLogo/> */}
 
         <span className="tags bottom-tags">
           &lt;/body&gt;

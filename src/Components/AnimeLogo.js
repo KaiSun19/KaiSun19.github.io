@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import '../Styles/AnimeLogo.scss';
 import Logo from '../assets/Images/Shakai - Logo.png';
-import gsap from 'gsap-trial';
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin';
+//import gsap from 'gsap-trial';
+//import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin';
 
 
 function AnimeLogo() {
@@ -11,44 +11,44 @@ function AnimeLogo() {
     const solidLogoRef = useRef()
     const outlineLogoRef = useRef()
 
-    useEffect(() => {
-        gsap.registerPlugin(DrawSVGPlugin)
+    // useEffect(() => {
+    //     gsap.registerPlugin(DrawSVGPlugin)
     
-        gsap
-          .timeline()
-          .to(bgRef.current, {
-            duration: 1,
-            opacity: 1,
-          })
-          .from(outlineLogoRef.current, {
-            drawSVG: 0,
-            duration: 200,
-          })
+    //     gsap
+    //       .timeline()
+    //       .to(bgRef.current, {
+    //         duration: 1,
+    //         opacity: 1,
+    //       })
+    //       .from(outlineLogoRef.current, {
+    //         drawSVG: 0,
+    //         duration: 200,
+    //       })
     
-        gsap.fromTo(
-          solidLogoRef.current,
-          {
-            opacity: 0,
-          },
-          {
-            opacity: 1,
-            delay: 4,
-            duration: 4,
-          }
-        )
+    //     gsap.fromTo(
+    //       solidLogoRef.current,
+    //       {
+    //         opacity: 0,
+    //       },
+    //       {
+    //         opacity: 1,
+    //         delay: 4,
+    //         duration: 4,
+    //       }
+    //     )
 
-        gsap.fromTo(
-            outlineLogoRef.current,
-            {
-              opacity: 1,
-            },
-            {
-              opacity: 0,
-              delay: 4,
-              duration: 4,
-            }
-          )
-      }, [])
+    //     gsap.fromTo(
+    //         outlineLogoRef.current,
+    //         {
+    //           opacity: 1,
+    //         },
+    //         {
+    //           opacity: 0,
+    //           delay: 4,
+    //           duration: 4,
+    //         }
+    //       )
+    //   }, [])
 
 
   return (
