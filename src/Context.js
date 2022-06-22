@@ -82,9 +82,9 @@ export const DataProvider = ({children}) =>{
       img_link: "https://raw.githubusercontent.com/KaiSun19/Calculator/main/calculator_demo.PNG"
     },
     {
-      name: "In Development",
-      desc : "Stay tuned for more projects",
-      img_link: ""
+      name: "Ember Super Rentals",
+      desc : "An ember app made showing property listings as shown in the Ember Getting Started Tutorials. Modified to have a listing form and more extensive search tool.",
+      img_link: "https://raw.githubusercontent.com/KaiSun19/SuperRentals/main/super_rentals_demo.PNG"
     },
     {
       name: "In Development",
